@@ -1,0 +1,85 @@
+ForwardX11 yes
+ForwardX11Trusted yes
+#ForwardAgent yes
+#ServerAliveInterval 120
+#ServerAliveCountMax 10
+#GSSAPIAuthentication yes
+
+
+######################################################
+# ORNL
+######################################################
+
+Host login1
+	User eqs
+	HostName login1.ornl.gov
+
+Host login2
+	User eqs
+	HostName login2.ornl.gov
+
+host sdg
+	User eqs
+	HostName sdg-tm76.ornl.gov
+
+Host home
+	User esuchyta
+	HostName home.ccs.ornl.gov
+
+Host summit
+	User esuchyta
+	HostName summit.olcf.ornl.gov
+
+Host andes
+	User esuchyta
+	HostName andes.olcf.ornl.gov
+
+Host spock
+	User esuchyta
+	HostName spock.olcf.ornl.gov
+
+Host tulip
+	User coe62720
+	HostName tulip.cray.com
+
+
+######################################################
+# NERSC
+######################################################
+
+Host cori
+	user esuchyta
+	hostname cori.nersc.gov
+
+Host cori-http
+	user esuchyta
+	hostname cori.nersc.gov
+	ProxyCommand corkscrew snowman.ornl.gov 3128 %h %p
+
+
+######################################################
+# Argonne
+######################################################
+
+Host theta
+	user suchyta
+	hostname theta.alcf.anl.gov
+
+Host theta-http
+	user suchyta
+	hostname theta.alcf.anl.gov
+	ProxyCommand corkscrew snowman.ornl.gov 3128 %h %p
+
+Host jlse
+	user suchyta
+	hostname login.jlse.anl.gov
+
+
+######################################################
+# TACC
+######################################################
+
+Host frontera
+	User esuchyta
+	HostName frontera.tacc.utexas.edu
+
