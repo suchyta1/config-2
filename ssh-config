@@ -26,6 +26,10 @@ Host home
 	User esuchyta
 	HostName home.ccs.ornl.gov
 
+Host crusher
+	User esuchyta
+	HostName crusher.olcf.ornl.gov
+
 Host summit
 	User esuchyta
 	HostName summit.olcf.ornl.gov
